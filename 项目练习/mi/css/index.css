@@ -53,8 +53,6 @@
 }
 /* .app-wrapper:hover>.app .qrcode{
     display: block;
-
-
 } */
 
 .app:hover .qrcode,
@@ -112,4 +110,45 @@
 
 .shop-cart{
     margin-left: 25px;
+}
+
+/* 设置中间的header */
+.header {
+    height: 100px;
+    background-color: aquamarine;
+
+    }
+
+.header .logo{
+    float: left;
+    margin-top: 22px;
+    height: 55px;
+    width: 55px;
+    position: relative;
+    overflow: hidden;
+}
+
+.header .logo a{
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 0;
+    background-color: #ff6700;
+    background-image: url(../img/mi-logo.png);
+    background-position: center; 
+    transition: left 0.  3s;
+}
+
+.header .logo .home{
+    left: -55px;
+    background-image: url(../img/mi-home.png);
+}
+
+.header .logo:hover .mi{
+    left: 55px;
+}
+
+.header .logo:hover .home{
+    left: 0;    
 }
